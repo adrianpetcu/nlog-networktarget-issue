@@ -12,8 +12,8 @@ node listener.js
   timestamp: '2018-02-12T09:12:42.7514494Z',
   machineName: 'LAB-01',
   environment: 'DEV',
-  dbResponseTime: 50,
-  messagesSentTotal: 100,
+  **dbResponseTime: 50,
+  messagesSentTotal: 100,**
   module: 'core' }
 
 3. Leave the listener open. Change Nlog.config to log only to the network target (writeTo="networkTarget") and start the console again. The message received by the listener will not contain the dbResponseTime and messagesSentTotal (layout for event-properties:item):
